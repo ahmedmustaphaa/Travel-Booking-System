@@ -1,0 +1,92 @@
+/* showitem.css */
+
+.tour {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  margin: 20px;
+  max-width: 300px; /* Adjust as needed */
+}
+
+.tour:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.tour img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #eaeaea; /* Border below the image */
+}
+
+.tour h3 {
+  font-size: 1.25rem;
+  margin: 10px 15px;
+  color: #333;
+}
+
+.success {
+  background-color: #28a745; /* Bootstrap success color */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  display: flex;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  transition: background-color 0.3s;
+}
+
+.success:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.tour h4 {
+  font-size: 1rem;
+  margin: 0 15px;
+  color: #666;
+}
+
+.tour h5 {
+  color: #d9534f; /* Red color for price */
+  font-size: 1.2rem;
+  margin: 10px 15px;
+}
+
+.get-start {
+  margin: 10px 15px;
+}
+
+.rating-star {
+  color: #ffc107; /* Gold star color */
+}
+
+.btn {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+ justify-content: center;
+ align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+  width:20%;
+  display: flex;
+  margin: 10px auto;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .tour {
+      max-width: 100%; /* Full width on small screens */
+  }
+}

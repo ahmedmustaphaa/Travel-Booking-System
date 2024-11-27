@@ -1,0 +1,19 @@
+#offcanvase{
+    background-color: #eee;
+    z-index: 99999;
+    color:black;
+}
+
+@media (max-width:720px) {
+    #offcanvase{
+        width: 100%;
+    }
+    
+}
+.bodybapser{
+    background-color:darkslategray;
+    text-align: center;
+}
+.head-title{
+    background-color:brown;
+}

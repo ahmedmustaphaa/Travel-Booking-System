@@ -1,0 +1,174 @@
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo .logo-text h2 {
+    color:blue;
+    font-size: 28px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.header {
+    display: flex;
+    z-index:0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px; /* Consistent padding */
+    background-color: rgba(255, 255, 255, 0.3); 
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+.header ul {
+    display: flex;
+    gap: 20px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+li a {
+    color:rgba(0, 0, 0, 0.092);
+    text-transform: capitalize;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: brown;
+}
+
+li:hover {
+    color: brown;
+}
+
+.menu {
+    display: none; /* Hidden by default */
+    font-size: 40px;
+    cursor: pointer;
+}
+
+@media (max-width: 720px) {
+    .header {
+        padding: 10px 20px; /* Reduced padding for smaller screens */
+    }
+    
+    .menu {
+        display: block; /* Show menu icon on mobile */
+    }
+    .logo img{
+        display: none;
+    }
+    
+    ul {
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Stack items vertically */
+        position: absolute; /* Position below the header */
+        top: 100%; /* Position below the header */
+        left: 0; /* Align to the left */
+        width: 100%; /* Full width */
+        height: 450px;
+        background-color:#444; /* Ensure background color */
+        transition: all 0.3s ease; /* Smooth transition */
+        clip-path: polygon(0 0, 7% 0, 100% 0); /* Initial clip-path */
+        z-index: 9999; /* High z-index to appear above other elements */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+    }
+    ul li{
+        background-color:#123;
+        width: 90%;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    ul li:hover{
+        background-color: darkolivegreen;
+    }
+    ul.show { 
+        clip-path: polygon(0 0, 0% 100%, 100% 100%, 100% 0); /* Show the dropdown */
+    }
+    .logo-text{
+        display: none;
+    }
+
+    /* Show the menu when toggled */
+   
+
+    ul li {
+        padding-left: 20px; /* Adjust padding for mobile */
+        margin: 12px 0; /* Vertical margin */
+    }
+}
+.cart-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .shopping-cart {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    margin-right: 10px; /* Space between button and count */
+  }
+  
+  .shopping-cart:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  .item-count {
+    background-color: #f44336; /* Red background for count */
+    color: white; /* White text */
+    border-radius: 50%; /* Circle shape */
+    padding: 5px 10px; /* Padding */
+    font-size: 14px; /* Font size */
+    display: flex; /* Flex to center text */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    min-width: 25px; /* Minimum width for circle */
+    height: 25px; /* Height for circle */
+    text-align: center; /* Center text */
+  }
+
+.item-count {
+    margin-left: 10px; /* Space between icon and text */
+    font-size: 1.5rem; /* Larger font size for visibility */
+    color: red; /* Color for the item count */
+    font-weight: bold; /* Bold text for emphasis */
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    min-width: 30px; /* Minimum width for consistent sizing */
+    height: 30px; /* Height for the badge */
+    border-radius: 50%; /* Circular badge */
+    background-color: #007bff; /* Blue background for the badge */
+    color: white; 
+    line-height: 30px;
+    position: relative; 
+    right: 42px;
+    top: 28px;
+}
+.logout-message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 1000;
+}

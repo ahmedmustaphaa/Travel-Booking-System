@@ -1,0 +1,76 @@
+.footer {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 60px; /* Increased padding for better spacing */
+    background-color: #333; /* Dark background for the footer */
+    color: #fff; /* White text color */
+}
+
+.lang, .support, .company, .work {
+    flex: 1 1 200px; /* Flex-grow and basis for responsiveness */
+    margin-bottom: 20px; /* Space between sections */
+}
+
+h1, h2, h3 {
+    margin: 10px 0; /* Space above and below headings */
+    font-family: 'Arial', sans-serif; /* Professional font */
+}
+
+.footer select {
+    margin: 10px 0; /* Space around select elements */
+    padding: 10px; /* Increased padding for comfort */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #fff; /* White border for selects */
+    background-color: #444; /* Dark background for selects */
+    color: #fff; /* White text color */
+    appearance: none; /* Remove default arrow */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="white"><polygon points="0,0 16,0 8,8"/></svg>'); /* Custom arrow */
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* Position the arrow */
+}
+
+p {
+    margin: 5px 0; /* Space between paragraphs */
+    cursor: pointer; /* Pointer cursor for clickable items */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+p:hover {
+    color: #ffd700; /* Change color on hover */
+}
+
+.icons {
+    display: flex;
+   gap: 20px;/* Space icons evenly */
+    margin-top: 10px; /* Space above icons */
+}
+
+.icon {
+    font-size: 28px; /* Icon size */
+    color: #fff; /* Icon color */
+    transition: transform 0.3s, color 0.3s; /* Smooth transition for hover effects */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.icon:hover {
+    transform: scale(1.2); /* Scale effect on hover */
+    color: #ffd700; /* Change color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+        align-items: center; /* Center align items */
+    }
+
+    .lang, .support, .company, .work {
+        text-align: center; /* Center text for better readability */
+    }
+
+    .icons {
+        justify-content: center; /* Center icons */
+    }
+}

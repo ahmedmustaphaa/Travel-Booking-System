@@ -1,0 +1,121 @@
+/* checkout.css */
+
+.checkedout {
+    padding:70px 20px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+.products{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+
+}
+
+.cart-length h1 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.review {
+    margin-top: 40px;
+}
+
+.item-review h2 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.product-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.product-checkout {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.product-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.product-price {
+    flex-grow: 1;
+    font-size: 1rem;
+    color: #666;
+}
+
+.quantity-control {
+    display: flex;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 2px 30px;
+    align-items: center;
+    border: 2px solid green;
+}
+.quantity-control:hover{
+    background-color:indianred;
+}
+
+.quantity-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.quantity-btn:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.checkout-summary {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.checkout-summary h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.checkout-summary p {
+    font-size: 1rem;
+    color: #333;
+    padding: 10px 0;
+}

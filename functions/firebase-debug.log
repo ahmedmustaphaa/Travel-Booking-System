@@ -1,0 +1,2224 @@
+[debug] [2024-11-09T18:53:32.283Z] ----------------------------------------------------------------------
+[debug] [2024-11-09T18:53:32.296Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2024-11-09T18:53:32.297Z] CLI Version:   13.24.1
+[debug] [2024-11-09T18:53:32.297Z] Platform:      win32
+[debug] [2024-11-09T18:53:32.297Z] Node Version:  v20.11.1
+[debug] [2024-11-09T18:53:32.297Z] Time:          Sat Nov 09 2024 20:53:32 GMT+0200 (Eastern European Standard Time)
+[debug] [2024-11-09T18:53:32.298Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-09T18:53:32.660Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-09T18:53:32.660Z] > authorizing via signed-in user (jshhshssbsbs1@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2024-11-09T18:53:32.732Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-09T18:53:32.732Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-11-09T18:53:32.750Z] [hub] writing locator at C:\Users\sasa\AppData\Local\Temp\hub-auth-project-2c343.json
+[debug] [2024-11-09T18:53:32.976Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-09T18:53:32.977Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-09T18:53:32.977Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-09T18:53:32.977Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2024-11-09T18:53:32.987Z] defaultcredentials: writing to file C:\Users\sasa\AppData\Roaming\firebase\jshhshssbsbs1_gmail_com_application_default_credentials.json
+[debug] [2024-11-09T18:53:33.025Z] Setting GAC to C:\Users\sasa\AppData\Roaming\firebase\jshhshssbsbs1_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\sasa\\AppData\\Roaming\\firebase\\jshhshssbsbs1_gmail_com_application_default_credentials.json"}}
+[debug] [2024-11-09T18:53:33.061Z] Checked if tokens are valid: false, expires at: 1731177321944
+[debug] [2024-11-09T18:53:33.064Z] Checked if tokens are valid: false, expires at: 1731177321944
+[debug] [2024-11-09T18:53:33.065Z] > refreshing access token with scopes: []
+[debug] [2024-11-09T18:53:33.068Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-11-09T18:53:33.068Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-11-09T18:53:33.391Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-11-09T18:53:33.391Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-11-09T18:53:33.403Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/auth-project-2c343/adminSdkConfig [none]
+[debug] [2024-11-09T18:53:33.839Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/auth-project-2c343/adminSdkConfig 200
+[debug] [2024-11-09T18:53:33.839Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/auth-project-2c343/adminSdkConfig {"projectId":"auth-project-2c343","storageBucket":"auth-project-2c343.firebasestorage.app"}
+[info] i  ui: downloading ui-v1.14.0.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.14.0.zip..."}}
+[debug] [2024-11-09T18:53:33.887Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.14.0.zip 
+[debug] [2024-11-09T18:53:34.235Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.14.0.zip 200
+[debug] [2024-11-09T18:53:34.236Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.14.0.zip [stream]
+[debug] [2024-11-09T18:53:36.004Z] Data is 3615311
+[debug] [2024-11-09T18:53:36.005Z] [unzip] Entry: client/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-11-09T18:53:36.005Z] [unzip] Processing entry: client\
+[debug] [2024-11-09T18:53:36.005Z] [unzip] mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\
+[debug] [2024-11-09T18:53:36.007Z] [unzip] Entry: client/favicon-16x16.png (compressed_size=293 bytes, uncompressed_size=293 bytes)
+[debug] [2024-11-09T18:53:36.007Z] [unzip] Processing entry: client\favicon-16x16.png
+[debug] [2024-11-09T18:53:36.007Z] [unzip] else mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-09T18:53:36.008Z] [unzip] Writing file: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\favicon-16x16.png
+[debug] [2024-11-09T18:53:36.010Z] [unzip] Entry: client/safari-pinned-tab.svg (compressed_size=1433 bytes, uncompressed_size=2611 bytes)
+[debug] [2024-11-09T18:53:36.010Z] [unzip] Processing entry: client\safari-pinned-tab.svg
+[debug] [2024-11-09T18:53:36.010Z] [unzip] else mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-09T18:53:36.011Z] [unzip] deflating: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\safari-pinned-tab.svg
+[debug] [2024-11-09T18:53:36.019Z] [unzip] Entry: client/favicon.ico (compressed_size=2933 bytes, uncompressed_size=13294 bytes)
+[debug] [2024-11-09T18:53:36.019Z] [unzip] Processing entry: client\favicon.ico
+[debug] [2024-11-09T18:53:36.019Z] [unzip] else mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-09T18:53:36.020Z] [unzip] deflating: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\favicon.ico
+[debug] [2024-11-09T18:53:36.022Z] [unzip] Entry: client/index.html (compressed_size=1363 bytes, uncompressed_size=3071 bytes)
+[debug] [2024-11-09T18:53:36.022Z] [unzip] Processing entry: client\index.html
+[debug] [2024-11-09T18:53:36.022Z] [unzip] else mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-09T18:53:36.023Z] [unzip] deflating: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\index.html
+[debug] [2024-11-09T18:53:36.025Z] [unzip] Entry: client/android-chrome-192x192.png (compressed_size=2684 bytes, uncompressed_size=2684 bytes)
+[debug] [2024-11-09T18:53:36.025Z] [unzip] Processing entry: client\android-chrome-192x192.png
+[debug] [2024-11-09T18:53:36.025Z] [unzip] else mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-09T18:53:36.026Z] [unzip] Writing file: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\android-chrome-192x192.png
+[debug] [2024-11-09T18:53:36.028Z] [unzip] Entry: client/apple-touch-icon.png (compressed_size=2123 bytes, uncompressed_size=2152 bytes)
+[debug] [2024-11-09T18:53:36.028Z] [unzip] Processing entry: client\apple-touch-icon.png
+[debug] [2024-11-09T18:53:36.028Z] [unzip] else mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-09T18:53:36.029Z] [unzip] deflating: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\apple-touch-icon.png
+[debug] [2024-11-09T18:53:36.031Z] [unzip] Entry: client/android-chrome-512x512.png (compressed_size=5369 bytes, uncompressed_size=5411 bytes)
+[debug] [2024-11-09T18:53:36.031Z] [unzip] Processing entry: client\android-chrome-512x512.png
+[debug] [2024-11-09T18:53:36.031Z] [unzip] else mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-09T18:53:36.031Z] [unzip] deflating: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\android-chrome-512x512.png
+[debug] [2024-11-09T18:53:36.033Z] [unzip] Entry: client/manifest.json (compressed_size=245 bytes, uncompressed_size=551 bytes)
+[debug] [2024-11-09T18:53:36.033Z] [unzip] Processing entry: client\manifest.json
+[debug] [2024-11-09T18:53:36.033Z] [unzip] else mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-09T18:53:36.034Z] [unzip] deflating: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\manifest.json
+[debug] [2024-11-09T18:53:36.069Z] [unzip] Entry: client/robots.txt (compressed_size=26 bytes, uncompressed_size=26 bytes)
+[debug] [2024-11-09T18:53:36.070Z] [unzip] Processing entry: client\robots.txt
+[debug] [2024-11-09T18:53:36.070Z] [unzip] else mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-09T18:53:36.070Z] [unzip] Writing file: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\robots.txt
+[debug] [2024-11-09T18:53:36.072Z] [unzip] Entry: client/mstile-150x150.png (compressed_size=2034 bytes, uncompressed_size=2034 bytes)
+[debug] [2024-11-09T18:53:36.072Z] [unzip] Processing entry: client\mstile-150x150.png
+[debug] [2024-11-09T18:53:36.072Z] [unzip] else mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-09T18:53:36.073Z] [unzip] Writing file: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\mstile-150x150.png
+[debug] [2024-11-09T18:53:36.075Z] [unzip] Entry: client/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-11-09T18:53:36.075Z] [unzip] Processing entry: client\assets\
+[debug] [2024-11-09T18:53:36.075Z] [unzip] mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\
+[debug] [2024-11-09T18:53:36.076Z] [unzip] Entry: client/assets/index-ClZTY_JS.js.map (compressed_size=2328270 bytes, uncompressed_size=9947004 bytes)
+[debug] [2024-11-09T18:53:36.076Z] [unzip] Processing entry: client\assets\index-ClZTY_JS.js.map
+[debug] [2024-11-09T18:53:36.077Z] [unzip] else mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets
+[debug] [2024-11-09T18:53:36.079Z] [unzip] deflating: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\index-ClZTY_JS.js.map
+[debug] [2024-11-09T18:53:36.408Z] [unzip] Entry: client/assets/index-ClZTY_JS.js (compressed_size=567195 bytes, uncompressed_size=2035940 bytes)
+[debug] [2024-11-09T18:53:36.408Z] [unzip] Processing entry: client\assets\index-ClZTY_JS.js
+[debug] [2024-11-09T18:53:36.408Z] [unzip] else mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets
+[debug] [2024-11-09T18:53:36.446Z] [unzip] deflating: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\index-ClZTY_JS.js
+[debug] [2024-11-09T18:53:36.570Z] [unzip] Entry: client/assets/index-BdgySamB.css (compressed_size=35979 bytes, uncompressed_size=298654 bytes)
+[debug] [2024-11-09T18:53:36.570Z] [unzip] Processing entry: client\assets\index-BdgySamB.css
+[debug] [2024-11-09T18:53:36.570Z] [unzip] else mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets
+[debug] [2024-11-09T18:53:36.571Z] [unzip] deflating: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\index-BdgySamB.css
+[debug] [2024-11-09T18:53:36.582Z] [unzip] Entry: client/assets/extensions/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-11-09T18:53:36.583Z] [unzip] Processing entry: client\assets\extensions\
+[debug] [2024-11-09T18:53:36.583Z] [unzip] mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\extensions\
+[debug] [2024-11-09T18:53:36.583Z] [unzip] Entry: client/assets/extensions/default-extension.png (compressed_size=1646 bytes, uncompressed_size=1657 bytes)
+[debug] [2024-11-09T18:53:36.584Z] [unzip] Processing entry: client\assets\extensions\default-extension.png
+[debug] [2024-11-09T18:53:36.584Z] [unzip] else mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\extensions
+[debug] [2024-11-09T18:53:36.584Z] [unzip] deflating: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\extensions\default-extension.png
+[debug] [2024-11-09T18:53:36.587Z] [unzip] Entry: client/assets/img/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-11-09T18:53:36.587Z] [unzip] Processing entry: client\assets\img\
+[debug] [2024-11-09T18:53:36.587Z] [unzip] mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\img\
+[debug] [2024-11-09T18:53:36.589Z] [unzip] Entry: client/assets/img/database.png (compressed_size=29449 bytes, uncompressed_size=29988 bytes)
+[debug] [2024-11-09T18:53:36.590Z] [unzip] Processing entry: client\assets\img\database.png
+[debug] [2024-11-09T18:53:36.590Z] [unzip] else mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\img
+[debug] [2024-11-09T18:53:36.590Z] [unzip] deflating: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\img\database.png
+[debug] [2024-11-09T18:53:36.594Z] [unzip] Entry: client/assets/provider-icons/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-11-09T18:53:36.594Z] [unzip] Processing entry: client\assets\provider-icons\
+[debug] [2024-11-09T18:53:36.594Z] [unzip] mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\
+[debug] [2024-11-09T18:53:36.595Z] [unzip] Entry: client/assets/provider-icons/auth_service_saml.svg (compressed_size=575 bytes, uncompressed_size=1226 bytes)
+[debug] [2024-11-09T18:53:36.596Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_saml.svg
+[debug] [2024-11-09T18:53:36.596Z] [unzip] else mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-09T18:53:36.596Z] [unzip] deflating: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_saml.svg
+[debug] [2024-11-09T18:53:36.599Z] [unzip] Entry: client/assets/provider-icons/auth_service_phone.svg (compressed_size=261 bytes, uncompressed_size=414 bytes)
+[debug] [2024-11-09T18:53:36.599Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_phone.svg
+[debug] [2024-11-09T18:53:36.599Z] [unzip] else mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-09T18:53:36.600Z] [unzip] deflating: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_phone.svg
+[debug] [2024-11-09T18:53:36.602Z] [unzip] Entry: client/assets/provider-icons/auth_service_facebook.svg (compressed_size=289 bytes, uncompressed_size=457 bytes)
+[debug] [2024-11-09T18:53:36.603Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2024-11-09T18:53:36.603Z] [unzip] else mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-09T18:53:36.603Z] [unzip] deflating: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2024-11-09T18:53:36.607Z] [unzip] Entry: client/assets/provider-icons/auth_service_game_center.svg (compressed_size=991 bytes, uncompressed_size=3921 bytes)
+[debug] [2024-11-09T18:53:36.607Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2024-11-09T18:53:36.607Z] [unzip] else mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-09T18:53:36.608Z] [unzip] deflating: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2024-11-09T18:53:36.611Z] [unzip] Entry: client/assets/provider-icons/auth_service_apple.svg (compressed_size=230 bytes, uncompressed_size=334 bytes)
+[debug] [2024-11-09T18:53:36.611Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_apple.svg
+[debug] [2024-11-09T18:53:36.611Z] [unzip] else mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-09T18:53:36.612Z] [unzip] deflating: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_apple.svg
+[debug] [2024-11-09T18:53:36.615Z] [unzip] Entry: client/assets/provider-icons/auth_service_github.svg (compressed_size=466 bytes, uncompressed_size=838 bytes)
+[debug] [2024-11-09T18:53:36.616Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_github.svg
+[debug] [2024-11-09T18:53:36.616Z] [unzip] else mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-09T18:53:36.617Z] [unzip] deflating: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_github.svg
+[debug] [2024-11-09T18:53:36.620Z] [unzip] Entry: client/assets/provider-icons/auth_service_mslive.svg (compressed_size=203 bytes, uncompressed_size=378 bytes)
+[debug] [2024-11-09T18:53:36.621Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2024-11-09T18:53:36.621Z] [unzip] else mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-09T18:53:36.622Z] [unzip] deflating: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2024-11-09T18:53:36.624Z] [unzip] Entry: client/assets/provider-icons/auth_service_yahoo.svg (compressed_size=577 bytes, uncompressed_size=1182 bytes)
+[debug] [2024-11-09T18:53:36.625Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2024-11-09T18:53:36.625Z] [unzip] else mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-09T18:53:36.625Z] [unzip] deflating: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2024-11-09T18:53:36.628Z] [unzip] Entry: client/assets/provider-icons/auth_service_twitter.svg (compressed_size=444 bytes, uncompressed_size=751 bytes)
+[debug] [2024-11-09T18:53:36.629Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2024-11-09T18:53:36.629Z] [unzip] else mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-09T18:53:36.629Z] [unzip] deflating: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2024-11-09T18:53:36.638Z] [unzip] Entry: client/assets/provider-icons/auth_service_play_games.svg (compressed_size=565 bytes, uncompressed_size=1173 bytes)
+[debug] [2024-11-09T18:53:36.640Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2024-11-09T18:53:36.641Z] [unzip] else mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-09T18:53:36.642Z] [unzip] deflating: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2024-11-09T18:53:36.646Z] [unzip] Entry: client/assets/provider-icons/auth_service_email.svg (compressed_size=228 bytes, uncompressed_size=326 bytes)
+[debug] [2024-11-09T18:53:36.647Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_email.svg
+[debug] [2024-11-09T18:53:36.647Z] [unzip] else mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-09T18:53:36.647Z] [unzip] deflating: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_email.svg
+[debug] [2024-11-09T18:53:36.663Z] [unzip] Entry: client/assets/provider-icons/auth_service_google.svg (compressed_size=409 bytes, uncompressed_size=720 bytes)
+[debug] [2024-11-09T18:53:36.663Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_google.svg
+[debug] [2024-11-09T18:53:36.663Z] [unzip] else mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-09T18:53:36.664Z] [unzip] deflating: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_google.svg
+[debug] [2024-11-09T18:53:36.666Z] [unzip] Entry: client/assets/provider-icons/auth_service_oidc.svg (compressed_size=414 bytes, uncompressed_size=858 bytes)
+[debug] [2024-11-09T18:53:36.667Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2024-11-09T18:53:36.667Z] [unzip] else mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-09T18:53:36.667Z] [unzip] deflating: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2024-11-09T18:53:36.673Z] [unzip] Entry: client/browserconfig.xml (compressed_size=491 bytes, uncompressed_size=822 bytes)
+[debug] [2024-11-09T18:53:36.673Z] [unzip] Processing entry: client\browserconfig.xml
+[debug] [2024-11-09T18:53:36.673Z] [unzip] else mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-09T18:53:36.674Z] [unzip] deflating: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\browserconfig.xml
+[debug] [2024-11-09T18:53:36.694Z] [unzip] Entry: client/favicon-32x32.png (compressed_size=475 bytes, uncompressed_size=475 bytes)
+[debug] [2024-11-09T18:53:36.694Z] [unzip] Processing entry: client\favicon-32x32.png
+[debug] [2024-11-09T18:53:36.694Z] [unzip] else mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-09T18:53:36.695Z] [unzip] Writing file: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\client\favicon-32x32.png
+[debug] [2024-11-09T18:53:36.699Z] [unzip] Entry: server/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-11-09T18:53:36.699Z] [unzip] Processing entry: server\
+[debug] [2024-11-09T18:53:36.699Z] [unzip] mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\server\
+[debug] [2024-11-09T18:53:36.700Z] [unzip] Entry: server/server.mjs.map (compressed_size=296496 bytes, uncompressed_size=1355667 bytes)
+[debug] [2024-11-09T18:53:36.700Z] [unzip] Processing entry: server\server.mjs.map
+[debug] [2024-11-09T18:53:36.700Z] [unzip] else mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\server
+[debug] [2024-11-09T18:53:36.701Z] [unzip] deflating: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\server\server.mjs.map
+[debug] [2024-11-09T18:53:36.721Z] [unzip] Entry: server/server.mjs (compressed_size=315701 bytes, uncompressed_size=1172682 bytes)
+[debug] [2024-11-09T18:53:36.721Z] [unzip] Processing entry: server\server.mjs
+[debug] [2024-11-09T18:53:36.721Z] [unzip] else mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\server
+[debug] [2024-11-09T18:53:36.722Z] [unzip] deflating: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\server\server.mjs
+[debug] [2024-11-09T18:53:36.742Z] [unzip] Entry: server/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-11-09T18:53:36.742Z] [unzip] Processing entry: server\assets\
+[debug] [2024-11-09T18:53:36.742Z] [unzip] mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\server\assets\
+[debug] [2024-11-09T18:53:36.743Z] [unzip] Entry: server/assets/multipart-parser-DGCUZdXu.mjs.map (compressed_size=4791 bytes, uncompressed_size=17918 bytes)
+[debug] [2024-11-09T18:53:36.743Z] [unzip] Processing entry: server\assets\multipart-parser-DGCUZdXu.mjs.map
+[debug] [2024-11-09T18:53:36.743Z] [unzip] else mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\server\assets
+[debug] [2024-11-09T18:53:36.744Z] [unzip] deflating: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\server\assets\multipart-parser-DGCUZdXu.mjs.map
+[debug] [2024-11-09T18:53:36.746Z] [unzip] Entry: server/assets/multipart-parser-DGCUZdXu.mjs (compressed_size=2621 bytes, uncompressed_size=10390 bytes)
+[debug] [2024-11-09T18:53:36.746Z] [unzip] Processing entry: server\assets\multipart-parser-DGCUZdXu.mjs
+[debug] [2024-11-09T18:53:36.747Z] [unzip] else mkdir: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\server\assets
+[debug] [2024-11-09T18:53:36.747Z] [unzip] deflating: C:\Users\sasa\.cache\firebase\emulators\ui-v1.14.0\server\assets\multipart-parser-DGCUZdXu.mjs
+[info] i  ui: Removing outdated emulator files: ui-v1.13.0 {"metadata":{"emulator":{"name":"ui"},"message":"Removing outdated emulator files: ui-v1.13.0"}}
+[info] i  ui: Removing outdated emulator files: ui-v1.13.0.zip {"metadata":{"emulator":{"name":"ui"},"message":"Removing outdated emulator files: ui-v1.13.0.zip"}}
+[debug] [2024-11-09T18:53:36.808Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-11-09T18:53:36.808Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-11-09T18:53:36.808Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\sasa\\.cache\\firebase\\emulators\\ui-v1.14.0\\server\\server.mjs"],"optionalArgs":[],"joinArgs":false,"shell":false,"port":4000} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\sasa\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.14.0\\\\server\\\\server.mjs\"],\"optionalArgs\":[],\"joinArgs\":false,\"shell\":false,\"port\":4000}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-11-09T18:53:40.540Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2024-11-09T18:53:40.540Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\" for Cloud Functions..."}}
+[debug] [2024-11-09T18:53:40.778Z] Validating nodejs source
+[debug] [2024-11-09T18:53:50.983Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+    at async FunctionsEmulator.connect (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:297:13)
+    at async Object.startAll (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js:642:13)
+[debug] [2024-11-09T18:53:50.985Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T18:53:50.986Z] Building nodejs source
+[debug] [2024-11-09T18:53:50.987Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T18:53:50.992Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T18:53:51.060Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[error] !!  functions: Failed to load function definition from source: Error: spawn UNKNOWN {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: Error: spawn UNKNOWN"}}
+[debug] [2024-11-09T18:53:51.483Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2024-11-09T18:58:54.661Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T18:58:55.873Z] Validating nodejs source
+[debug] [2024-11-09T18:59:06.187Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T18:59:06.198Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T18:59:06.199Z] Building nodejs source
+[debug] [2024-11-09T18:59:06.199Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T18:59:06.349Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T18:59:06.416Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8790
+
+[debug] [2024-11-09T18:59:15.288Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2024-11-09T18:59:19.596Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/auth-project-2c343/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/auth-project-2c343/us-central1/api)."}}
+[debug] [2024-11-09T18:59:20.611Z] Validating nodejs source
+[debug] [2024-11-09T18:59:28.305Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T18:59:28.305Z] Building nodejs source
+[debug] [2024-11-09T18:59:28.306Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T18:59:28.308Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T18:59:28.319Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8326
+
+[debug] [2024-11-09T18:59:31.955Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-11-09T19:02:49.443Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T19:02:50.544Z] Validating nodejs source
+[debug] [2024-11-09T19:03:00.888Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T19:03:00.911Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T19:03:00.911Z] Building nodejs source
+[debug] [2024-11-09T19:03:00.913Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T19:03:00.972Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T19:03:01.094Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-11-09T19:03:01.237Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T19:03:02.242Z] Validating nodejs source
+[debug] [2024-11-09T19:03:11.744Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T19:03:11.744Z] Building nodejs source
+[debug] [2024-11-09T19:03:11.745Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T19:03:11.773Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T19:03:11.788Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8414
+
+[debug] [2024-11-09T19:03:11.820Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T19:03:12.078Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T19:03:13.083Z] Validating nodejs source
+[debug] [2024-11-09T19:03:20.801Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T19:03:20.801Z] Building nodejs source
+[debug] [2024-11-09T19:03:20.801Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T19:03:20.806Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T19:03:20.816Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[error] ReferenceError: functions is not defined
+    at Object.<anonymous> (C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js:13:13)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at loadModule (C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\firebase-functions\lib\runtime\loader.js:157:23)
+    at C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\firebase-functions\lib\bin\firebase-functions.js:56:56
+
+[info] Serving at port 8019
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[error] TypeError: Cannot read properties of undefined (reading 'onRequest')
+    at Object.<anonymous> (C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js:13:26)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at loadModule (C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\firebase-functions\lib\runtime\loader.js:157:23)
+    at C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\firebase-functions\lib\bin\firebase-functions.js:56:56
+
+[info] Serving at port 8657
+
+[error] TypeError: Cannot read properties of undefined (reading 'onRequest')
+    at Object.<anonymous> (C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js:13:26)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at loadModule (C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\firebase-functions\lib\runtime\loader.js:157:23)
+    at C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\firebase-functions\lib\bin\firebase-functions.js:56:56
+
+[debug] [2024-11-09T19:03:25.061Z] Got response code 400; body Failed to generate manifest from function source: TypeError: Cannot read properties of undefined (reading 'onRequest')
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2024-11-09T19:03:46.930Z] ----------------------------------------------------------------------
+[debug] [2024-11-09T19:03:46.942Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2024-11-09T19:03:46.943Z] CLI Version:   13.24.1
+[debug] [2024-11-09T19:03:46.943Z] Platform:      win32
+[debug] [2024-11-09T19:03:46.943Z] Node Version:  v20.11.1
+[debug] [2024-11-09T19:03:46.944Z] Time:          Sat Nov 09 2024 21:03:46 GMT+0200 (Eastern European Standard Time)
+[debug] [2024-11-09T19:03:46.944Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-09T19:03:47.190Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-09T19:03:47.191Z] > authorizing via signed-in user (jshhshssbsbs1@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[warn] !  hub: emulator hub unable to start on port 4400, starting on 4401 instead. {"metadata":{"emulator":{"name":"hub"},"message":"emulator hub unable to start on port 4400, starting on 4401 instead."}}
+[warn] !  ui: Emulator UI unable to start on port 4000, starting on 4001 instead. {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI unable to start on port 4000, starting on 4001 instead."}}
+[warn] !  logging: Logging Emulator unable to start on port 4500, starting on 4501 instead. {"metadata":{"emulator":{"name":"logging"},"message":"Logging Emulator unable to start on port 4500, starting on 4501 instead."}}
+[debug] [2024-11-09T19:03:47.239Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-09T19:03:47.240Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4401},{"address":"::1","family":"IPv6","port":4401}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4001},{"address":"::1","family":"IPv6","port":4001}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4501}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project auth-project-2c343. This may result in unexpected behavior. 
+[debug] [2024-11-09T19:03:47.283Z] [hub] writing locator at C:\Users\sasa\AppData\Local\Temp\hub-auth-project-2c343.json
+[warn] !  functions: Port 5001 is not open on localhost (127.0.0.1), could not start Functions Emulator. {"metadata":{"emulator":{"name":"functions"},"message":"Port 5001 is not open on localhost (127.0.0.1), could not start Functions Emulator."}}
+[warn] !  functions: To select a different host/port, specify that host/port in a firebase.json config file:
+      {
+        // ...
+        "emulators": {
+          "functions": {
+            "host": "HOST",
+            "port": "PORT"
+          }
+        }
+      } {"metadata":{"emulator":{"name":"functions"},"message":"To select a different host/port, specify that host/port in a firebase.json config file:\n      {\n        // ...\n        \"emulators\": {\n          \"functions\": {\n            \"host\": \"\u001b[33mHOST\u001b[39m\",\n            \"port\": \"\u001b[33mPORT\u001b[39m\"\n          }\n        }\n      }"}}
+[warn] !  eventarc: Eventarc Emulator unable to start on port 9299, starting on 9300 instead. {"metadata":{"emulator":{"name":"eventarc"},"message":"Eventarc Emulator unable to start on port 9299, starting on 9300 instead."}}
+[debug] [2024-11-09T19:03:47.427Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[warn] !  tasks: Cloud Tasks Emulator unable to start on port 9499, starting on 9500 instead. {"metadata":{"emulator":{"name":"tasks"},"message":"Cloud Tasks Emulator unable to start on port 9499, starting on 9500 instead."}}
+[debug] [2024-11-09T19:03:47.431Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-09T19:03:47.449Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
+[debug] [2024-11-09T19:03:47.466Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[error] 
+[error] Error: Could not start Functions Emulator, port taken.
+[debug] [2024-11-09T19:04:44.611Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T19:04:45.644Z] Validating nodejs source
+[debug] [2024-11-09T19:04:53.407Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T19:04:53.407Z] Building nodejs source
+[debug] [2024-11-09T19:04:53.407Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T19:04:53.421Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T19:04:53.437Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8714
+
+[debug] [2024-11-09T19:04:55.207Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-11-09T19:05:45.973Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T19:05:46.983Z] Validating nodejs source
+[debug] [2024-11-09T19:05:57.531Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T19:05:57.532Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T19:05:57.532Z] Building nodejs source
+[debug] [2024-11-09T19:05:57.533Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T19:05:57.646Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T19:05:57.661Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-11-09T19:05:57.687Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T19:05:58.820Z] Validating nodejs source
+[debug] [2024-11-09T19:06:08.195Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T19:06:08.195Z] Building nodejs source
+[debug] [2024-11-09T19:06:08.195Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T19:06:08.220Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T19:06:08.234Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8659
+
+[info] Serving at port 8455
+
+[debug] [2024-11-09T19:06:10.452Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-11-09T19:09:03.675Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T19:09:04.860Z] Validating nodejs source
+[debug] [2024-11-09T19:09:14.922Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T19:09:14.923Z] Building nodejs source
+[debug] [2024-11-09T19:09:14.924Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T19:09:14.946Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T19:09:14.967Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-11-09T19:09:15.024Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8912
+
+[debug] [2024-11-09T19:09:16.034Z] Validating nodejs source
+[debug] [2024-11-09T19:09:24.435Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T19:09:24.436Z] Building nodejs source
+[debug] [2024-11-09T19:09:24.436Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T19:09:24.444Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T19:09:24.455Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-11-09T19:09:24.485Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2024-11-09T19:09:24.524Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8682
+
+[debug] [2024-11-09T19:09:25.569Z] Validating nodejs source
+[debug] [2024-11-09T19:09:36.015Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T19:09:36.017Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T19:09:36.017Z] Building nodejs source
+[debug] [2024-11-09T19:09:36.017Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T19:09:36.085Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T19:09:36.101Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-11-09T19:09:36.168Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T19:09:37.171Z] Validating nodejs source
+[debug] [2024-11-09T19:09:47.246Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T19:09:47.247Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T19:09:47.248Z] Building nodejs source
+[debug] [2024-11-09T19:09:47.248Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T19:09:47.271Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T19:09:47.282Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[info] Serving at port 8222
+
+[debug] [2024-11-09T19:09:47.496Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T19:09:48.508Z] Validating nodejs source
+[debug] [2024-11-09T19:09:58.595Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T19:09:58.597Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T19:09:58.597Z] Building nodejs source
+[debug] [2024-11-09T19:09:58.597Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T19:09:58.606Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T19:09:58.615Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8119
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[debug] [2024-11-09T19:09:58.660Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T19:09:59.663Z] Validating nodejs source
+[debug] [2024-11-09T19:10:09.468Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T19:10:09.468Z] Building nodejs source
+[debug] [2024-11-09T19:10:09.468Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T19:10:09.478Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T19:10:09.487Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8225
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[info] Serving at port 8218
+
+[debug] [2024-11-09T19:10:13.072Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-11-09T20:18:01.614Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T20:18:03.141Z] Validating nodejs source
+[debug] [2024-11-09T20:18:13.675Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T20:18:13.717Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T20:18:13.718Z] Building nodejs source
+[debug] [2024-11-09T20:18:13.722Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T20:18:13.971Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T20:18:14.326Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-11-09T20:18:24.553Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8718/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8718/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[debug] [2024-11-09T20:19:13.823Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T20:19:15.033Z] Validating nodejs source
+[debug] [2024-11-09T20:19:26.870Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T20:19:26.892Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T20:19:26.895Z] Building nodejs source
+[debug] [2024-11-09T20:19:26.899Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T20:19:27.451Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T20:19:28.015Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-11-09T20:19:28.230Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T20:19:29.886Z] Validating nodejs source
+[debug] [2024-11-09T20:19:44.299Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T20:19:44.301Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T20:19:44.302Z] Building nodejs source
+[debug] [2024-11-09T20:19:44.302Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T20:19:44.918Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T20:19:45.294Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-11-09T20:19:46.885Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8340/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8340/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[debug] [2024-11-09T20:19:56.128Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8503/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8503/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[debug] [2024-11-09T20:20:07.482Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T20:20:08.513Z] Validating nodejs source
+[debug] [2024-11-09T20:20:18.967Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T20:20:18.970Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T20:20:18.970Z] Building nodejs source
+[debug] [2024-11-09T20:20:18.971Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T20:20:19.197Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T20:20:19.211Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-11-09T20:20:19.239Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T20:20:20.264Z] Validating nodejs source
+[debug] [2024-11-09T20:20:31.556Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T20:20:31.557Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T20:20:31.558Z] Building nodejs source
+[debug] [2024-11-09T20:20:31.560Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T20:20:32.534Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T20:20:32.546Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-11-09T20:20:33.490Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T20:20:33.516Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8093/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8093/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[debug] [2024-11-09T20:20:34.795Z] Validating nodejs source
+[debug] [2024-11-09T20:20:45.010Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T20:20:45.043Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T20:20:45.043Z] Building nodejs source
+[debug] [2024-11-09T20:20:45.044Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T20:20:45.062Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T20:20:45.080Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-11-09T20:20:45.209Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8088/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8088/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[debug] [2024-11-09T20:20:55.286Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8692/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8692/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[debug] [2024-11-09T20:21:20.037Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T20:21:22.113Z] Validating nodejs source
+[debug] [2024-11-09T20:21:33.644Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T20:21:33.660Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T20:21:33.661Z] Building nodejs source
+[debug] [2024-11-09T20:21:33.662Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T20:21:34.096Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T20:21:34.156Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-11-09T20:21:40.606Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T20:21:41.673Z] Validating nodejs source
+[debug] [2024-11-09T20:21:52.451Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T20:21:52.453Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T20:21:52.454Z] Building nodejs source
+[debug] [2024-11-09T20:21:52.454Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T20:21:52.608Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T20:21:52.621Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-11-09T20:21:52.767Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T20:21:52.816Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8065/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8065/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[debug] [2024-11-09T20:21:53.782Z] Validating nodejs source
+[debug] [2024-11-09T20:22:04.120Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T20:22:04.130Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T20:22:04.131Z] Building nodejs source
+[debug] [2024-11-09T20:22:04.131Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T20:22:04.324Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T20:22:04.337Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-11-09T20:22:04.459Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8006/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8006/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[debug] [2024-11-09T20:22:04.461Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T20:22:05.473Z] Validating nodejs source
+[debug] [2024-11-09T20:22:16.002Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T20:22:16.003Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T20:22:16.003Z] Building nodejs source
+[debug] [2024-11-09T20:22:16.004Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T20:22:16.127Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T20:22:16.142Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-11-09T20:22:16.611Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8747/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8747/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[debug] [2024-11-09T20:22:16.641Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T20:22:17.961Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T20:22:17.962Z] Validating nodejs source
+[debug] [2024-11-09T20:22:28.851Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T20:22:28.860Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T20:22:28.861Z] Building nodejs source
+[debug] [2024-11-09T20:22:28.861Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T20:22:29.117Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T20:22:29.128Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-11-09T20:22:29.396Z] Validating nodejs source
+[debug] [2024-11-09T20:22:40.791Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T20:22:40.795Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T20:22:40.796Z] Building nodejs source
+[debug] [2024-11-09T20:22:40.796Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T20:22:40.826Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T20:22:40.848Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-11-09T20:22:40.871Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[debug] [2024-11-09T20:22:40.898Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8166/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8166/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[debug] [2024-11-09T20:22:40.903Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8438/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8438/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[debug] [2024-11-09T20:22:42.200Z] Validating nodejs source
+[debug] [2024-11-09T20:22:52.425Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T20:22:52.426Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T20:22:52.427Z] Building nodejs source
+[debug] [2024-11-09T20:22:52.427Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T20:22:52.447Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T20:22:52.462Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-11-09T20:22:52.486Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T20:22:52.498Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8686/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8686/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[debug] [2024-11-09T20:22:53.487Z] Validating nodejs source
+[debug] [2024-11-09T20:23:04.021Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T20:23:04.040Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T20:23:04.040Z] Building nodejs source
+[debug] [2024-11-09T20:23:04.040Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T20:23:04.228Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T20:23:04.239Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[debug] [2024-11-09T20:23:04.266Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8674/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8674/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[debug] [2024-11-09T20:23:07.546Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T20:23:08.562Z] Validating nodejs source
+[debug] [2024-11-09T20:23:19.070Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T20:23:19.093Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T20:23:19.095Z] Building nodejs source
+[debug] [2024-11-09T20:23:19.098Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T20:23:19.319Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T20:23:19.396Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-11-09T20:23:19.442Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T20:23:19.458Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8160/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8160/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[debug] [2024-11-09T20:23:20.473Z] Validating nodejs source
+[debug] [2024-11-09T20:23:31.052Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T20:23:31.054Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T20:23:31.054Z] Building nodejs source
+[debug] [2024-11-09T20:23:31.054Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T20:23:31.162Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T20:23:31.175Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[debug] [2024-11-09T20:23:31.652Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T20:23:31.659Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8975/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8975/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[debug] [2024-11-09T20:23:32.806Z] Validating nodejs source
+[debug] [2024-11-09T20:23:44.300Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T20:23:44.305Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T20:23:44.306Z] Building nodejs source
+[debug] [2024-11-09T20:23:44.306Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T20:23:44.417Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T20:23:44.429Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-11-09T20:23:44.574Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T20:23:44.583Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8637/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8637/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[debug] [2024-11-09T20:23:45.848Z] Validating nodejs source
+[debug] [2024-11-09T20:23:56.342Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T20:23:56.344Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T20:23:56.344Z] Building nodejs source
+[debug] [2024-11-09T20:23:56.344Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T20:23:56.387Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T20:23:56.401Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[debug] [2024-11-09T20:23:56.535Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T20:23:56.550Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8126/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8126/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[debug] [2024-11-09T20:23:57.224Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T20:23:58.232Z] Validating nodejs source
+[debug] [2024-11-09T20:24:08.445Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T20:24:08.451Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T20:24:08.454Z] Building nodejs source
+[debug] [2024-11-09T20:24:08.454Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T20:24:08.482Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T20:24:08.537Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-11-09T20:24:08.565Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8196/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8196/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[debug] [2024-11-09T20:24:10.367Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T20:24:11.778Z] Validating nodejs source
+[debug] [2024-11-09T20:24:22.379Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T20:24:22.390Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T20:24:22.392Z] Building nodejs source
+[debug] [2024-11-09T20:24:22.393Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T20:24:22.649Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T20:24:22.665Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[debug] [2024-11-09T20:24:23.083Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T20:24:23.475Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8488/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8488/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[debug] [2024-11-09T20:24:24.113Z] Validating nodejs source
+[debug] [2024-11-09T20:24:34.768Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T20:24:34.777Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T20:24:34.778Z] Building nodejs source
+[debug] [2024-11-09T20:24:34.782Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T20:24:34.982Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T20:24:35.002Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[debug] [2024-11-09T20:24:35.500Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T20:24:35.622Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8231/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8231/__/quitquitquit failed, reason: ","type":"system","errno":"ETIMEDOUT","code":"ETIMEDOUT"}
+[debug] [2024-11-09T20:24:36.612Z] Validating nodejs source
+[debug] [2024-11-09T20:24:46.918Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T20:24:46.919Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T20:24:46.920Z] Building nodejs source
+[debug] [2024-11-09T20:24:46.920Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T20:24:47.046Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T20:24:47.056Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[debug] [2024-11-09T20:24:47.214Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8671/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8671/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[debug] [2024-11-09T20:24:48.887Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T20:24:49.904Z] Validating nodejs source
+[debug] [2024-11-09T20:25:00.576Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T20:25:00.631Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T20:25:00.632Z] Building nodejs source
+[debug] [2024-11-09T20:25:00.632Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T20:25:00.655Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T20:25:01.447Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[debug] [2024-11-09T20:25:01.480Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T20:25:01.490Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8739/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8739/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[debug] [2024-11-09T20:25:02.570Z] Validating nodejs source
+[debug] [2024-11-09T20:25:12.999Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T20:25:13.004Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T20:25:13.010Z] Building nodejs source
+[debug] [2024-11-09T20:25:13.022Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T20:25:13.051Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T20:25:13.063Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T20:25:13.081Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[debug] [2024-11-09T20:25:13.120Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8539/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8539/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[debug] [2024-11-09T20:25:14.117Z] Validating nodejs source
+[debug] [2024-11-09T20:25:24.342Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T20:25:24.346Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T20:25:24.346Z] Building nodejs source
+[debug] [2024-11-09T20:25:24.346Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T20:25:24.494Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T20:25:24.511Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-11-09T20:25:24.650Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8752/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8752/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[debug] [2024-11-09T20:25:24.872Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T20:25:26.124Z] Validating nodejs source
+[debug] [2024-11-09T20:25:36.448Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T20:25:36.460Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T20:25:36.461Z] Building nodejs source
+[debug] [2024-11-09T20:25:36.461Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T20:25:36.591Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T20:25:36.601Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[debug] [2024-11-09T20:25:37.027Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T20:25:37.058Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8249/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8249/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[debug] [2024-11-09T20:25:37.799Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T20:25:38.867Z] Validating nodejs source
+[debug] [2024-11-09T20:25:48.933Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T20:25:48.934Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T20:25:48.935Z] Building nodejs source
+[debug] [2024-11-09T20:25:48.935Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T20:25:48.948Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T20:25:48.958Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[debug] [2024-11-09T20:25:49.019Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T20:25:49.035Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8356/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8356/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[debug] [2024-11-09T20:25:50.021Z] Validating nodejs source
+[debug] [2024-11-09T20:26:00.478Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T20:26:00.484Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T20:26:00.484Z] Building nodejs source
+[debug] [2024-11-09T20:26:00.484Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T20:26:01.271Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T20:26:01.283Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[debug] [2024-11-09T20:26:01.652Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T20:26:01.662Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8217/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8217/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[debug] [2024-11-09T20:26:03.127Z] Validating nodejs source
+[debug] [2024-11-09T20:26:13.877Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T20:26:13.878Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T20:26:13.879Z] Building nodejs source
+[debug] [2024-11-09T20:26:13.879Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T20:26:14.114Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T20:26:14.128Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-11-09T20:26:14.159Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8234/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8234/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[debug] [2024-11-09T20:26:16.400Z] File C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sasa\\Desktop\\my-app\\dubi -safari\\safari\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-09T20:26:17.419Z] Validating nodejs source
+[debug] [2024-11-09T20:26:29.760Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:331:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\sasa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:371:34)
+[debug] [2024-11-09T20:26:29.762Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-09T20:26:29.762Z] Building nodejs source
+[debug] [2024-11-09T20:26:29.762Z] Failed to find version of module node: reached end of search path C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-11-09T20:26:29.967Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-09T20:26:29.979Z] Found firebase-functions binary at 'C:\Users\sasa\Desktop\my-app\dubi -safari\safari\functions\node_modules\.bin\firebase-functions'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[debug] [2024-11-09T20:26:30.175Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8925/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8925/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[debug] [2024-11-09T20:26:40.094Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8456/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8456/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
